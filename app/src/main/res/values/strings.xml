@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Aplikasi</string>
+    <string name="app_name">Firebase Apps</string>
     <string name="no_data">No data</string>
     <string name="loading">loading. . .</string>
     <string name="txtnull">-</string>
