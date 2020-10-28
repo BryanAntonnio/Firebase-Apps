@@ -51,6 +51,7 @@
     <string name="studentlist">Student List</string>
     <string name="toolbarstudmain">Student App</string>
     <string name="logout">Log out</string>
+    <string name="editcourse">Edit Course</string>
 
     <string-array name="day_array">
         <item>Monday</item>
