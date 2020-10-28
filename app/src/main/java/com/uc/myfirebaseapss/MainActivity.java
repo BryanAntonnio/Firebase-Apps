@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 v.startAnimation(klik);
                 Intent intent = new Intent(MainActivity.this, AddCourse.class);
+                intent.putExtra("action", "add");
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this);
                 startActivity(intent, options.toBundle());
