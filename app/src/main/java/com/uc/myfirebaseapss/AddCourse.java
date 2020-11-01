@@ -42,7 +42,7 @@ public class AddCourse extends AppCompatActivity {
     Toolbar bar;
     Dialog dialog;
     Spinner spinner_day, spinner_start, spinner_end, spinner_lecturer;
-    TextInputEditText input_subject;
+    TextInputLayout input_subject;
     String subject = "", day = "", start = "", end = "", lecturer = "" ,action = "";
     Button btn_add;
     Course course;
@@ -68,8 +68,8 @@ public class AddCourse extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        input_subject = findViewById(R.id.input_subject);
-        input_subject.addTextChangedListener(new TextWatcher() {
+        input_subject = findViewById(R.id.input_subject_course);
+        input_subject.getEditText().addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
@@ -125,7 +125,7 @@ public class AddCourse extends AppCompatActivity {
             btn_add.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    subject = input_subject.toString().trim();
+                    subject = input_subject.getEditText().getText().toString().trim();
                     day = spinner_day.getSelectedItem().toString();
                     start = spinner_start.getSelectedItem().toString();
                     end = spinner_end.getSelectedItem().toString();
@@ -136,7 +136,7 @@ public class AddCourse extends AppCompatActivity {
         }else if (action.equalsIgnoreCase("edit")){
             getSupportActionBar().setTitle(R.string.editcourse);
             course = intent.getParcelableExtra("edit_data_course");
-            input_subject.setText(course.getSubject());
+            input_subject.getEditText().setText(course.getSubject());
 
             int dayIndex = adapterday.getPosition(course.getDay());
             spinner_day.setSelection(dayIndex);
@@ -154,7 +154,7 @@ public class AddCourse extends AppCompatActivity {
             btn_add.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    subject = input_subject.getText().toString().trim();
+                    subject = input_subject.getEditText().getText().toString().trim();
                     day = spinner_day.getSelectedItem().toString();
                     start = spinner_start.getSelectedItem().toString();
                     end = spinner_end.getSelectedItem().toString();
@@ -193,7 +193,7 @@ public class AddCourse extends AppCompatActivity {
             @Override
             public void onSuccess(Void aVoid) {
                 Toast.makeText(AddCourse.this, "Add Course Successfully", Toast.LENGTH_SHORT).show();
-                input_subject.setText("");
+                input_subject.getEditText().setText("");
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override

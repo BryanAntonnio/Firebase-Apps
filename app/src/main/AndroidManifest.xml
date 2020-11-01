@@ -42,6 +42,8 @@
         <activity android:name=".AddCourse" />
         <activity android:name=".AddLecturer" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".CourseData"/>
+        <activity android:name=".adapter.EnrollCourseAdapter"/>
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

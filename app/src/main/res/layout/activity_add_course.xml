@@ -29,7 +29,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/button_selector"
-        android:enabled="false"
+        android:enabled="true"
         android:text="@string/addcourse"
         android:textAllCaps="false"
         android:textColor="@color/white"
