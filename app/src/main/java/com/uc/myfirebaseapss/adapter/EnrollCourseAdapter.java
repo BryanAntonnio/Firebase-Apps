@@ -76,7 +76,7 @@ public class EnrollCourseAdapter extends RecyclerView.Adapter<EnrollCourseAdapte
             @Override
             public void onClick(View v) {
 //                mDatabase.child("student").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("course").child(course.getId()).setValue(course);
-                cekBentrokan(course);
+                checkConflict(course);
             }
         });
 
@@ -115,7 +115,7 @@ public class EnrollCourseAdapter extends RecyclerView.Adapter<EnrollCourseAdapte
 
     boolean conflict = false;
 
-    public void cekBentrokan(final Course chosenCourse) {
+    public void checkConflict(final Course chosenCourse) {
 
         final int  chosenCourseStartInt = Integer.parseInt(chosenCourse.getStart().replace(":",""));
         final int chosenCourseEndInt = Integer.parseInt(chosenCourse.getEnd().replace(":",""));
