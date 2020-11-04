@@ -17,7 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:navigationIcon="@drawable/bg_circle_primary"
+        app:navigationIcon="@drawable/ic_construction_24px"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:title="@string/mainmenu"
         app:titleTextColor="@color/white" />
@@ -83,24 +83,6 @@
                         app:layout_constraintStart_toEndOf="@+id/img_cv_add_lecturer_main"
                         app:layout_constraintTop_toTopOf="@+id/img_cv_add_lecturer_main" />
 
-                    <View
-                        android:id="@+id/divh_cv_add_lecturer_main"
-                        android:layout_width="0dp"
-                        android:layout_height="4dp"
-                        android:background="@color/colorPrimary"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <View
-                        android:id="@+id/divv_cv_add_lecturer_main"
-                        android:layout_width="4dp"
-                        android:layout_height="0dp"
-                        android:background="@color/colorPrimary"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
@@ -149,24 +131,6 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/img_cv_add_course_main"
                         app:layout_constraintTop_toTopOf="@+id/img_cv_add_course_main" />
-
-                    <View
-                        android:id="@+id/divh_cv_add_course_main"
-                        android:layout_width="0dp"
-                        android:layout_height="4dp"
-                        android:background="@color/colorPrimary"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
-
-                    <View
-                        android:id="@+id/divv_cv_add_course_main"
-                        android:layout_width="4dp"
-                        android:layout_height="0dp"
-                        android:background="@color/colorPrimary"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
@@ -217,24 +181,6 @@
                         app:layout_constraintStart_toEndOf="@+id/img_cv_add_student_main"
                         app:layout_constraintTop_toTopOf="@+id/img_cv_add_student_main" />
 
-                    <View
-                        android:id="@+id/divh_cv_add_student_main"
-                        android:layout_width="0dp"
-                        android:layout_height="4dp"
-                        android:background="@color/colorPrimary"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <View
-                        android:id="@+id/divv_cv_add_student_main"
-                        android:layout_width="4dp"
-                        android:layout_height="0dp"
-                        android:background="@color/colorPrimary"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
@@ -283,24 +229,6 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/img_cv_login_student_main"
                         app:layout_constraintTop_toTopOf="@+id/img_cv_login_student_main" />
-
-                    <View
-                        android:id="@+id/divh_cv_login_student_main"
-                        android:layout_width="0dp"
-                        android:layout_height="4dp"
-                        android:background="@color/colorPrimary"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
-
-                    <View
-                        android:id="@+id/divv_cv_login_student_main"
-                        android:layout_width="4dp"
-                        android:layout_height="0dp"
-                        android:background="@color/colorPrimary"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
